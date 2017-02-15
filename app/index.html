@@ -1,12 +1,276 @@
 <!DOCTYPE html>
 <html lang="pt_BR">
+
   <head>
-    <title>Fábrica Livre</title>
     <meta charset="utf-8">
-    <meta name="description" content="Fábrica Livre">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fábrica Livre</title>
+    <link rel="stylesheet" href="css/normalize.css">    
+    <link rel="stylesheet" href="css/styles.css">
   </head>
+
   <body>
-    <h1>Fábrica Livre</h1>
-    <p>Olá, mundo</p>
+    <!-- main-menu -->
+    <nav id="main-menu">
+      <ul>
+	<li>Home</li>
+	<li>Design Livre</li>
+	<li>O Projeto</li>
+	<li>Blog</li>
+	<li>Licenças</li>
+      </ul>
+    </nav>
+    <!-- /main-menu -->
+
+    <!-- landing -->
+    <div class="landing">
+      <div class="hero">
+	<h1>Fábrica Livre</h1>
+
+	<h2>Uma plataforma de disponibilização de planos de corte e guias de montagem de mobiliários que utilizam papelão como principal material de elaboração</h2>
+      </div>
+    </div>
+    <!-- /landing -->
+
+    <main role="main">
+      <!-- secondary-menu -->
+      <nav id="secondary-menu">
+	<ul>
+	  <li>Mobiliário</li>
+	  <li>Designers</li>
+	  <li>Lugares para produzir</li>
+	</ul>
+      </nav>
+      <!-- /secondary-menu -->
+
+      <!-- filters -->
+      <aside class="panel">
+	<div class="panel__help">
+	  <img src="" alt="Logo Fábrica Livre">
+	  <p>Selecione algum tipo de móvel ou filtro para encontrar o móvel que deseja. Outra alternativa é utilizar a barra de pesquisa com palavras chave, como por exemplo "cadeira escritório".</p>
+	</div>
+	
+	<label class="search-bar__label" for="search-bar">Pesquisar:</label> 
+	<input class="search-bar__input"id="search-bar-0" type="search" placeholder="Pesquisar">
+
+	<fieldset class="filter">
+	  <legend class="filter__legend">Filtros</legend>
+
+	  <!-- -------------- -->
+	  
+	  <ul class="filter__group">
+	    <li class="filter__item">
+	      <label>
+		<input type="checkbox" name="purpose" value="decoracao">
+		decoração
+	      </label>
+	    </li>
+	    <li class="filter__item">
+	      <label>
+		<input type="checkbox" name="purpose" value="escritorio">
+		escritório
+	      </label>
+	    </li>
+	    <li class="filter__item">
+	      <label>
+		<input type="checkbox" name="purpose" value="quarto">
+		quarto
+	      </label>
+	    </li>
+	    <li class="filter__item">
+	      <label>
+		<input type="checkbox" name="purpose" value="cozinha">
+		cozinha
+	      </Label>
+	    </li>
+	    <li class="filter__item">
+	      <label>
+		<input type="checkbox" name="purpose" value="sala">
+		sala
+	      </label>
+	    </li>
+	    <li class="filter__item">
+	      <label>
+		<input type="checkbox" name="purpose" value="criancas">
+		crianças
+	      </label>
+	    </li>
+	  </ul>
+
+	  <!-- -------------- -->
+	  
+	  <ul class="filter__group">
+	    <li class="filter__item">
+	      <label>
+		<input type="checkbox" name="finishing" value="com-acabamento"/>
+		com acabamento
+	      </label>
+	    </li>
+	    <li class="filter__item">
+	      <label>
+		<input type="checkbox" name="finishing" value="sem-acabamento"/>
+		sem-acabamento
+	      </label>
+	    </li>
+	    <li class="filter__item">
+	      <label>
+		<input type="checkbox" name="finishing" value="permeavel"/>
+		permeável
+	      </label>
+	    </li>
+	    <li class="filter__item">
+	      <label>
+		<input type="checkbox" name="finishing" value="impermeavel"/>
+		impermeável
+	      </label>
+	    </li>
+	  </ul>
+
+  	  <!-- -------------- -->
+
+	  <ul class="filter__group">
+	    <li class="filter__item">
+	      <label>
+		<input name="kind" type="checkbox" value="cadeiras"/>
+		cadeiras
+	      </label>
+	    </li>
+	    <li class="filter__item">
+	      <label>
+		<input name="kind" type="checkbox" value="mesas"/>
+		mesas
+	      </label>
+	    </li>
+	    <li class="filter__item">
+	      <label>
+		<input name="kind" type="checkbox" value="armarios"/>
+		armários
+	      </label>
+	    </li>
+	    <li class="filter__item">
+	      <label>
+		<input name="kind" type="checkbox" value="modulares"/>
+		modulares
+	      </label>
+	    </li>
+	    <li class="filter__item">
+	      <label>
+		<input name="kind" type="checkbox" value="linha-pet"/>
+		linha pet
+	      </label>
+	    </li>
+	    <li class="filter__item">
+	      <label>
+		<input name="kind" type="checkbox" value="camas"/>
+		camas
+	      </label>
+	    </li>
+	    <li class="filter__item">
+	      <label>
+		<input name="kind" type="checkbox" value="estantes"/>
+		estantes
+	      </label>
+	    </li>
+	    <li class="filter__item">
+	      <label>
+		<input name="kind" type="checkbox" value="aparadores"/>
+		aparadores
+	      </label>
+	    </li>
+	    <li class="filter__item">
+	      <label>
+		<input name="kind" type="checkbox" value="bancos"/>
+		bancos
+	      </label>
+	    </li>
+	    <li class="filter__item">
+	      <label>
+		<input name="kind" type="checkbox" value="prateleiras"/>
+		prateleiras
+	      </label>
+	    </li>
+	  </ul>
+
+	  <!-- -------------- -->
+
+	  <ul class="filter__group">
+	    <li class="filter__item">
+	      <label>
+		<input type="checkbox" name="ambient" value="interno"/>
+		interno
+	      </label>
+	    </li>
+	    <li class="filter__item">
+	      <label>
+		<input type="checkbox" name="ambient" value="externo"/>
+		externo
+	      </label>
+	    </li>
+	  </ul>
+	</fieldset>
+      </aside>
+      <!-- /filters -->
+
+
+
+
+
+      <!-- furnitures -->
+      <section class="furniture">
+	<article class="furniture__item">
+	  <img class="furniture__image" src="images/movel.jpg" alt="mesa">
+	  <a class="furniture__link" href="">VER DETALHES</a>
+	</article>
+
+	<article class="furniture__item">
+	  <img class="furniture__image" src="images/movel.jpg" alt="mesa">
+	  <a class="furniture__link" href="">VER DETALHES</a>
+	</article>
+
+	<article class="furniture__item">
+	  <img class="furniture__image" src="images/movel.jpg" alt="mesa">
+	  <a class="furniture__link" href="">VER DETALHES</a>
+	</article>
+
+	<article class="furniture__item">
+	  <img class="furniture__image" src="images/movel.jpg" alt="mesa">
+	  <a class="furniture__link" href="">VER DETALHES</a>
+	</article>
+
+	<article class="furniture__item">
+	  <img class="furniture__image" src="images/movel.jpg" alt="mesa">
+	  <a class="furniture__link" href="">VER DETALHES</a>
+	</article>
+
+	<article class="furniture__item">
+	  <img class="furniture__image" src="images/movel.jpg" alt="mesa">
+	  <a class="furniture__link" href="">VER DETALHES</a>
+	</article>
+
+	<article class="furniture__item">
+	  <img class="furniture__image" src="images/movel.jpg" alt="mesa">
+	  <a class="furniture__link" href="">VER DETALHES</a>
+	</article>
+
+	<article class="furniture__item">
+	  <img class="furniture__image" src="images/movel.jpg" alt="mesa">
+	  <a class="furniture__link" href="">VER DETALHES</a>
+	</article>
+
+	<article class="furniture__item">
+	  <img class="furniture__image" src="images/movel.jpg" alt="mesa">
+	  <a class="furniture__link" href="">VER DETALHES</a>
+	</article>
+      </section>
+      <!-- furnitures -->
+
+      <footer class="main-footer">
+	<ul class="supporters">
+	  <li>VAITEC</li>
+	  <li>ADESAMPA</li>
+	  <li>Prefeitura de São Paulo</li>
+	</ul>
+    </main>
   </body>
 </html>
