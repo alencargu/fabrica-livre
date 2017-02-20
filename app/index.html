@@ -12,34 +12,36 @@
 
   <body>
     <!-- main-menu -->
-    <nav id="main-menu">
+    <nav class="menu menu--primary">
       <ul>
-	<li>Home</li>
-	<li>Design Livre</li>
-	<li>O Projeto</li>
-	<li>Blog</li>
-	<li>Licenças</li>
+	<li><a href="#">Home</a></li>
+	<li><a href="#">Design Livre</a></li>
+	<li><a href="#">O Projeto</a></li>
+	<li><a href="#">Blog</a></li>
+	<li><a href="#">Licenças</a></li>
       </ul>
     </nav>
     <!-- /main-menu -->
 
     <!-- landing -->
     <div class="landing">
-      <div class="hero">
-	<h1>Fábrica Livre</h1>
+      <div class="jumbotron">
+	<div class="container">
+	  <h1 class="jumbotron__title">Fábrica Livre</h1>
 
-	<h2>Uma plataforma de disponibilização de planos de corte e guias de montagem de mobiliários que utilizam papelão como principal material de elaboração</h2>
+	  <h2 class="jumbotron__text">Uma plataforma de disponibilização de planos de corte e guias de montagem de mobiliários que utilizam papelão como principal material de elaboração</h2>
+	</div>
       </div>
     </div>
     <!-- /landing -->
 
     <main role="main">
       <!-- secondary-menu -->
-      <nav id="secondary-menu">
+      <nav class="menu menu--secondary">
 	<ul>
-	  <li>Mobiliário</li>
-	  <li>Designers</li>
-	  <li>Lugares para produzir</li>
+	  <li><a href="#">MOBILIÁRIO</a></li>
+	  <li><a href="#">DESIGNERS</a></li>
+	  <li><a href="#">LUGARES PARA PRODUZIR</a></li>
 	</ul>
       </nav>
       <!-- /secondary-menu -->
@@ -48,10 +50,10 @@
       <aside class="panel">
 	<div class="panel__help">
 	  <img src="" alt="Logo Fábrica Livre">
-	  <p>Selecione algum tipo de móvel ou filtro para encontrar o móvel que deseja. Outra alternativa é utilizar a barra de pesquisa com palavras chave, como por exemplo "cadeira escritório".</p>
+	  <p>Selecione algum tipo de móvel ou filtro para encontrar mais facilmente o móvel que deseja. Outra alternativa é utilizar a barra de pesquisa com palavras chave, como por exemplo "cadeira escritório".</p>
 	</div>
 	
-	<label class="search-bar__label" for="search-bar">Pesquisar:</label> 
+	<label class="search-bar__label screen-reader-text" for="search-bar">Pesquisar:</label> 
 	<input class="search-bar__input"id="search-bar-0" type="search" placeholder="Pesquisar">
 
 	<fieldset class="filter">
@@ -110,7 +112,7 @@
 	    <li class="filter__item">
 	      <label>
 		<input type="checkbox" name="finishing" value="sem-acabamento"/>
-		sem-acabamento
+		sem acabamento
 	      </label>
 	    </li>
 	    <li class="filter__item">

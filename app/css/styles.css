@@ -1,5 +1,160 @@
-/* Geral */
+/* ==========================================================================
+   #GLOBAL
+   ========================================================================== */
 
 body {
-    background-color: lightgray;
+    font-family: sans-serif;
+    color: #422918;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 2em;
+}
+
+.screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: polygon(0px 0px, 0px 0px,0px 0px, 0px 0px);
+    position: absolute !important;
+    white-space: nowrap;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+
+/* ==========================================================================
+   #MENU
+   ========================================================================== */
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu a {
+    text-decoration: none;
+}
+
+.menu a {
+    color: #222;
+}
+
+.menu--secondary {
+    background-color: #ededed;
+}
+
+.menu--secondary a {
+    display: block;    
+    padding: 1em;
+    text-align: center;
+    font-size: 0.8em;
+    line-height: 2.5;
+}
+
+.menu--secondary a:hover {
+    background-color: #bda370;
+}
+
+/* ==========================================================================
+   #JUMBOTRON
+   ========================================================================== */
+
+.jumbotron {
+    text-align: center;
+    margin-bottom: 4em;
+}
+
+.jumbotron__title {
+    margin-bottom: 1em;
+}
+
+.jumbotron__text {
+    font-weight: normal;
+    font-size: 1.2em;
+}
+
+.jumbotron__text:after {
+    content: '';
+    display: block;
+    width: 60%;
+    height: 0px;
+    margin: 20px auto 0;
+    border-bottom: 1px solid #9c9c9c;
+}
+
+/* ==========================================================================
+   #FILTER
+   ========================================================================== */
+
+.panel {
+    padding: 4em 1.5em;
+    background-color: #d8d8d8;
+}
+
+.panel__help {
+    margin-bottom: 2em;
+    line-height: 1.4;
+}
+
+.search-bar__input {
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+.filter {
+    padding: 0;
+    border: none;
+}
+
+.filter__legend {
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.filter__group {
+    padding: 0;
+    list-style: none;
+    margin-bottom: 20px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #422918;
+}
+
+.filter__group:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+    
+
+.filter__item {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+/* ==========================================================================
+   #FURNITURE
+   ========================================================================== */
+
+.furniture {
+    padding: 1.5em;
+}
+
+.furniture__item {
+    margin-bottom: 2em;
+}
+
+.furniture__item img {
+    max-width: 100%;
+    display: block;
+}
+
+.furniture__link {
+    display: block;
+    background-color: #c99d66;
+    line-height: 2.5;
+    text-align: center;
+    text-decoration: none;
+    color: white;
 }
