@@ -133,6 +133,51 @@ body {
     line-height: 1.5;
 }
 
+.filter__item label {
+    position: relative;
+    padding-left: 30px;
+}
+
+.filter__item input {
+    position: absolute;
+    z-index: -9999;
+}
+
+.filter__item span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    background: #B3B3B3;
+    box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.4);
+}
+
+.filter__item span:after {
+    content: '';
+    width: 9px;
+    height: 5px;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    border: 3px solid #fcfff4;
+    border-top: none;
+    border-right: none;
+    background: transparent;
+    opacity: 0;
+    transform: rotate(-45deg);
+}
+
+.filter__item input:checked + span:after {
+    opacity: 1;
+}
+
+.filter__item input:checked + span {
+    background: #239E46;
+}
+
 /* ==========================================================================
    #FURNITURE
    ========================================================================== */
