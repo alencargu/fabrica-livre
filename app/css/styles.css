@@ -45,11 +45,11 @@ body {
     color: #222;
 }
 
-.menu--secondary {
+.menu--secondary, .menu--primary {
     background-color: #ededed;
 }
 
-.menu--secondary a {
+.menu--secondary a, .menu--primary a {
     display: block;    
     padding: 1em;
     text-align: center;
@@ -71,6 +71,7 @@ body {
 }
 
 .jumbotron__title {
+    margin-top: 4em;
     margin-bottom: 1em;
 }
 
