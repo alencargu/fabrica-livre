@@ -2,6 +2,10 @@
    #GLOBAL
    ========================================================================== */
 
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
 body {
     font-family: sans-serif;
     color: #422918;
@@ -153,10 +157,12 @@ body {
     height: 20px;
     border-radius: 4px;
     background: #B3B3B3;
-    box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.4);
+    box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5),
+                      0px 1px 0px rgba(255, 255, 255, 0.4);
 }
 
 .filter__item span:after {
+    box-sizing: content-box;
     content: '';
     width: 9px;
     height: 5px;
@@ -203,4 +209,36 @@ body {
     text-align: center;
     text-decoration: none;
     color: white;
+}
+
+/* ==========================================================================
+   #MEDIA-QUERY
+   ========================================================================== */
+
+@media (min-width: 370px) {
+    
+    .filter__group {
+	display: flex;
+	flex-wrap: wrap;
+    }
+
+    .filter__item {
+	flex: 50% 0;
+	padding-right: 10px;
+    }
+}
+
+@media (min-width: 460px) {
+
+    .container {
+	padding: 0 3em;
+    }
+    
+    .panel {
+	padding: 4em 3em;
+    }
+
+    .furniture {
+	padding: 2em 3em;
+    }
 }
